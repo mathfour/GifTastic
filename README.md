@@ -26,9 +26,10 @@ Oooo! I like colors!
 
 ## Bits
 
-* css for the buttons that get created (any chance we can get the button to be the color of the word?)
+* ~css for the buttons that get created (any chance we can get the button to be the color of the 
+word? *yes!*)~
 * ~list of colors to start with (array)~
 * ~code that takes each color from the array and creates the button~
-* code that appends list of colors with the submission from form
+* ~code that appends list of colors with the submission from form~
 * ajax call to giphy api
 * code to post still image but when clicked give the animated one

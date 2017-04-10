@@ -1,0 +1,20 @@
+body {
+    font-family: Arial;
+    font-size: 2em;
+    font-weight:bold;
+    margin: 20px 10% 20px 10%;
+    background-image: url("../images/colorful_dots_on_white.jpg");
+}
+
+button {
+    font-size: 1em;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#addColorButton {
+    font-size: 1em;
+    margin: 10px;
+    border-radius: 10px;
+}
+
