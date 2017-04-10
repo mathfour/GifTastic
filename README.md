@@ -5,4 +5,4 @@ Homework Assignment 6
 ## To Do List
 * &#9744; Brainstorm and write out bits
 * &#9744;
-* &#9745;
+* &#9746;
