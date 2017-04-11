@@ -18,3 +18,21 @@ button {
     border-radius: 10px;
 }
 
+img {
+    margin:10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-style: solid;
+}
+
+figcaption {
+    font-weight:normal;
+    text-align: center;
+    font-size:1em;
+}
+
+.imgContainer {
+    float: left;
+}
+

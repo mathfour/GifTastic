@@ -2,12 +2,13 @@ console.log("this is working");
 
 
 var colorList = ["red", "white", "blue"];
-
+var srcIMGLoop = [];
+var srcIMG = [];
 
 $(document).ready(function () {
 
-    // This creates a button for every color in the color list
-
+    // This creates a button for every color in the original color list
+    // and also makes each subsequent button
     function makeButtons(array) {
 
         $.each(array, function (x, thisColor) {
@@ -31,7 +32,9 @@ $(document).ready(function () {
 
         });
     }
-
+    // When user types in a color and clicks submit
+    // the color gets put in a singleton array (so we can use
+    // the array function above to make the button for it
     $("#colorForm").submit(function (event) {
         event.preventDefault();
 
@@ -43,6 +46,7 @@ $(document).ready(function () {
         makeButtons(colorInputted);
     });
 
+    // This renders the buttons on the initial load
     makeButtons(colorList);
 
 
@@ -54,6 +58,8 @@ $(document).ready(function () {
 
     $(".searchColor").click(function () {
         var colorNow = this.id;
+        srcIMGLoop = [];
+        srcIMG = [];
         // console.log(colorNow);
         var rating = "pg";
         var limit = 10;
@@ -69,19 +75,36 @@ $(document).ready(function () {
 
             $.each(colorImgArray, function (i) {
                 rating = whatImGettingBack.data[i].rating;
-                srcIMG = whatImGettingBack.data[i].images.fixed_width_still.url;
+                var thisImg = whatImGettingBack.data[i].images.original_still.url;
+
+                // Populating these arrays for the toggle still vs. animated
+                srcIMG.push(whatImGettingBack.data[i].images.original_still.url);
+                srcIMGLoop.push(whatImGettingBack.data[i].images.looping.url);
+
+                var containerForAll = $("<div>");
+                $(containerForAll).attr("class", "imgContainer");
+
+                var htmlForRating = $("<figcaption>");
+                $(htmlForRating).append("Rating: " + rating);
+                $(containerForAll).append(htmlForRating);
 
                 var htmlForImage = $("<img>");
+                $(htmlForImage).attr({
+                    id: "image" + i,
+                    src: thisImg
+                });
+                $(containerForAll).append(htmlForImage);
 
-                $(htmlForImage).attr("src", srcIMG);
+                $("#colorImages").append(containerForAll);
 
-                $("#colorImages").append(htmlForImage);
             });
         });
     });
 
 
-
+    // $("img").click(function () {
+    //     var actionNow = this.id;
+    // };
 
 
 
