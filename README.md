@@ -30,7 +30,7 @@ word? *yes!*)~
 * ~code that takes each color from the array and creates the button~
 * ~code that appends list of colors with the submission from form~
 * ~ajax call to giphy api~
-* ajax call to api for the added buttons (it's working for the original ones)
+* ~ajax call to api for the added buttons~
 * ~code to post still image but~ when clicked give the animated one
 * ~make the ratings show up~
 * ~get the photos where they're straight~

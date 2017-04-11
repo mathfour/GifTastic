@@ -48,7 +48,8 @@ $(document).ready(function () {
     // ERICK ERICK ERICK ERICK ERICK HELP HELP HELP HELP HELP
     // This should cause ANY element with class of searchColor to work
     // But it doesn't - so I need help on this one
-    $(".searchColor").click(function () {
+    $("#colorButtons").on("click", ".searchColor", function () {
+    // $(".searchColor").click(function () {
         var colorNow = this.id;
         srcIMGLoop = [];
         srcIMG = [];
