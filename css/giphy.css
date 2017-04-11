@@ -1,19 +1,23 @@
 body {
     font-family: Arial;
-    font-size: 2em;
+    font-size: 24px;
     font-weight:bold;
     margin: 20px 10% 20px 10%;
     background-image: url("../images/colorful_dots_on_white.jpg");
 }
 
 button {
-    font-size: 1em;
+    font-size: 24px;
     margin: 10px;
     border-radius: 10px;
 }
 
+#colorInput {
+    font-size:24px;
+}
+
 #addColorButton {
-    font-size: 1em;
+    font-size: 24px;
     margin: 10px;
     border-radius: 10px;
 }
@@ -27,9 +31,8 @@ img {
 }
 
 figcaption {
-    font-weight:normal;
     text-align: center;
-    font-size:1em;
+    font-size: 16px;
 }
 
 .imgContainer {

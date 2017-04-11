@@ -1,6 +1,3 @@
-console.log("this is working");
-
-
 var colorList = ["red", "white", "blue"];
 var srcIMGLoop = [];
 var srcIMG = [];
@@ -17,7 +14,6 @@ $(document).ready(function () {
 
             // This makes the background color of the buttons to be the same as the color!
             var buttonBGColor = 'background-color: ' + thisColor + ';';
-
 
             colorButton.attr({
                 id: thisColor,
@@ -49,18 +45,14 @@ $(document).ready(function () {
     // This renders the buttons on the initial load
     makeButtons(colorList);
 
-
-    // <button id="purple" value="purple" class="searchColor" style="background-color:
-    // purple;">purple</button>
-
-
-
-
+    // ERICK ERICK ERICK ERICK ERICK HELP HELP HELP HELP HELP
+    // This should cause ANY element with class of searchColor to work
+    // But it doesn't - so I need help on this one
     $(".searchColor").click(function () {
         var colorNow = this.id;
         srcIMGLoop = [];
         srcIMG = [];
-        // console.log(colorNow);
+
         var rating = "pg";
         var limit = 10;
 
@@ -74,25 +66,31 @@ $(document).ready(function () {
             colorImgArray = whatImGettingBack.data;
 
             $.each(colorImgArray, function (i) {
+                // Getting the bits I'll need to display rating and image
                 rating = whatImGettingBack.data[i].rating;
                 var thisImg = whatImGettingBack.data[i].images.original_still.url;
 
-                // Populating these arrays for the toggle still vs. animated
+                // Populating these arrays for the toggle: still vs. animated
                 srcIMG.push(whatImGettingBack.data[i].images.original_still.url);
                 srcIMGLoop.push(whatImGettingBack.data[i].images.looping.url);
 
+                // Creating a container for the ratings and images
                 var containerForAll = $("<div>");
                 $(containerForAll).attr("class", "imgContainer");
 
+                // html goodies just for the rating
                 var htmlForRating = $("<figcaption>");
                 $(htmlForRating).append("Rating: " + rating);
-                $(containerForAll).append(htmlForRating);
 
+                // html goodies for the image itself
                 var htmlForImage = $("<img>");
                 $(htmlForImage).attr({
                     id: "image" + i,
                     src: thisImg
                 });
+
+                // Putting the rating and the image in the container
+                $(containerForAll).append(htmlForRating);
                 $(containerForAll).append(htmlForImage);
 
                 $("#colorImages").append(containerForAll);

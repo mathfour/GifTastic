@@ -32,3 +32,5 @@ word? *yes!*)~
 * ~ajax call to giphy api~
 * ajax call to api for the added buttons (it's working for the original ones)
 * ~code to post still image but~ when clicked give the animated one
+* ~make the ratings show up~
+* ~get the photos where they're straight~
