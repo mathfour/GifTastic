@@ -1,8 +1,8 @@
 # Colorful GifTastic
-Homework Assignment 6
-Bon Crowder
-The Houston Coding Bootcamp Powered by UT Austin
-April 2017
+Homework Assignment 6 <br>
+Bon Crowder<br>
+The Houston Coding Bootcamp Powered by UT Austin<br>
+April 2017<br>
 
 [Enjoy some colorful gifs here!](https://mathfour.github.io/GifTastic/)
 
@@ -26,6 +26,6 @@ For the cool stuff to happen, try using these colors in the blank:
 * Navy
 * Fuchsia
 * Purple
-
-<center>Copyright &#0169; 2017</center>
+<br>
+<center>Copyright &#0169; 2017</center><br>
 <center>Bon Crowder</centered>
