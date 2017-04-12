@@ -1,36 +1,31 @@
-# GifTastic
+# Colorful GifTastic
 Homework Assignment 6
+Bon Crowder
+The Houston Coding Bootcamp Powered by UT Austin
+April 2017
 
-[Enjoy the result here!](https://mathfour.github.io/GifTastic/) (coming soon)
+[Enjoy some colorful gifs here!](https://mathfour.github.io/GifTastic/)
 
-## Pre-programming To Do List
-* &#9746; Brainstorm and write out bits
-* &#9746; Clone repo locally
-* &#9746; Create html, css, js files
-* &#9746; Create generic html
-* &#9746; Put in references to stylesheet, jQuery ~and UnderscoreJS~
-* &#9744; Maybe create an Evernote note with these steps, as they seem to be used often
-* &#9744; Code it! (see the to do list below)
+Click on the buttons to show gifs that are of things of that color. 
 
-## Thoughts on Topics
+Click on the images to start and stop the animation.
 
-1. Back to the Future
-2. Weird Al
-3. Colors
+Type in a new color and get another button on which you can click!
 
-Oooo! I like colors!
+For the cool stuff to happen, try using these colors in the blank:
 
-******
+* Red
+* Maroon
+* Yellow
+* Olive
+* Lime
+* Green
+* Aqua
+* Teal
+* Blue
+* Navy
+* Fuchsia
+* Purple
 
-## Pseudo-coding Bits & To Do List
-
-* ~css for the buttons that get created (any chance we can get the button to be the color of the 
-word? *yes!*)~
-* ~list of colors to start with (array)~
-* ~code that takes each color from the array and creates the button~
-* ~code that appends list of colors with the submission from form~
-* ~ajax call to giphy api~
-* ~ajax call to api for the added buttons~
-* ~code to post still image but~ when clicked give the animated one
-* ~make the ratings show up~
-* ~get the photos where they're straight~
+<center>Copyright &#0169; 2017</center>
+<center>Bon Crowder</centered>
