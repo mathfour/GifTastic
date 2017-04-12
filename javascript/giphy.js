@@ -1,4 +1,5 @@
 var colorList = ["red", "white", "blue"];
+var tryTheseColors = ['White ', ' Silver ', ' Gray ', ' Black ', ' Red ', ' Maroon ', ' Yellow ', ' Olive ', ' Lime ', ' Green ', ' Aqua ', ' Teal ', ' Blue ', ' Navy ', ' Fuchsia ', ' Purple'];
 var srcIMGLoop = [];
 var srcIMG = [];
 
@@ -35,11 +36,13 @@ $(document).ready(function () {
         event.preventDefault();
 
         var colorInputted = [];
-        colorInputted.push($("#colorInput").val());
+        colorInputted.push($("#colorInput").val().trim());
 
         console.log(colorInputted);
 
         makeButtons(colorInputted);
+
+        $("#colorInput").val("");
     });
 
     // This renders the buttons on the initial load
